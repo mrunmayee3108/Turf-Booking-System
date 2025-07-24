@@ -97,6 +97,7 @@
   }
   
   footer {
+    margin-top: 15px;
     background-color: #1f3a1d;
     color: white;
     padding: 40px 20px;
@@ -120,3 +121,57 @@
     margin-right: 10px;
     font-size: 18px;
   }
+
+  .container {
+    margin: 30px auto;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    padding: 20px;
+    background: #dae7ce;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+  }
+
+  h2 {
+    text-align: center;
+    margin-bottom: 30px;
+  }
+
+  .card-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    max-height: 500px;
+    overflow-y: auto;
+    padding-right: 10px;
+  }
+
+  .review-card {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1);
+    width: 300px;
+    padding: 20px;
+    transition: transform 0.2s ease-in-out;
+  }
+
+  .review-card:hover {
+    transform: translateY(-5px);
+  }
+
+  .review-card h4 {
+    margin: 0 0 10px 0;
+    color: #0c3b1e;
+  }
+
+  .review-card p {
+    margin: 0;
+    color: #333;
+  }
+
+.stars i{
+    color: gold;
+    margin-right: 2px;
+}
+
