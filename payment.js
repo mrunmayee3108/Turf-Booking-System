@@ -1,23 +1,14 @@
-document.getElementById("paymentForm").addEventListener("submit", function (e) {
-  e.preventDefault();
+let btn=document.querySelector("#button");
+let form=document.querySelector("#paymentForm");
+btn.onclick=(e)=>{
+    e.preventDefault();
+    if(form.checkValidity()){
+        alert("Payment Successful!!");
+        setTimeout(() => {
+        window.location.href = "thankyou.html";
+        }, 3000);
+        form.reset();
+    }
+    else form.reportValidity();
 
-  const name = document.getElementById("name").value.trim();
-  const email = document.getElementById("email").value.trim();
-  const card = document.getElementById("card").value.trim();
-  const expiry = document.getElementById("expiry").value.trim();
-  const cvv = document.getElementById("cvv").value.trim();
-  const message = document.getElementById("message");
-
-  if (!name || !email || !card || !expiry || !cvv) {
-    message.style.color = "red";
-    message.textContent = "Please fill in all fields.";
-    return;
-  }
-
-  // Simulated payment processing
-  setTimeout(() => {
-    message.style.color = "green";
-    message.textContent = "Payment successful! Thank you for using StepToTurf.";
-    document.getElementById("paymentForm").reset();
-  }, 1000);
-});
+}
