@@ -3,7 +3,10 @@ let form=document.querySelector("#myform");
 btn.onclick=(e)=>{
     e.preventDefault();
     if(form.checkValidity()){
-        alert("Booking Successful!!");
+        alert("Make Payment!!");
+        setTimeout(() => {
+    window.location.href = "payment.html";
+        }, 2000);
         form.reset();
     }
     else form.reportValidity();
