@@ -1,0 +1,133 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-image: url("https://media.istockphoto.com/id/637298374/photo/view-of-soccer-ball-on-athletic-field-in-stadium-arena.webp?a=1&b=1&s=612x612&w=0&k=20&c=7BzHLq2sz6zSfLVYDZn2jwdOMhRAZL9ZBPIt02A4gDw=");
+    background-size: cover;
+    background-attachment: fixed;
+    color: white;
+    min-height: 100vh;
+}
+
+.main {
+    height: 100px;
+    width: 100%;
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.webinfo {
+    width: 80%;
+    margin: 20px auto;
+    padding: 30px;
+    font-size: 1.2rem;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+    border-radius: 10px;
+    line-height: 1.6;
+}
+
+.webinfo p {
+    margin-bottom: 15px;
+}
+
+.webinfo ul {
+    margin: 20px 0;
+    padding-left: 30px;
+}
+
+.webinfo li {
+    margin-bottom: 10px;
+}
+
+.team-section {
+    width: 80%;
+    margin: 40px auto;
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+}
+
+.team-title {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    text-align: center;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+.team-members {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: nowrap;
+}
+
+.team-member {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 25px;
+    border-radius: 8px;
+    width: 280px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.team-member:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.member-name {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+    color: #4fc3f7;
+}
+
+.social-links {
+    margin-top: 20px;
+}
+
+.social-links a {
+    display: inline-block;
+    margin: 0 8px;
+    color: white;
+    font-size: 1.3rem;
+    transition: color 0.3s;
+}
+
+.social-links a:hover {
+    color: #4fc3f7;
+}
+
+@media (max-width: 1000px) {
+    .team-members {
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .team-member {
+        width: 45%;
+    }
+}
+
+@media (max-width: 600px) {
+    .webinfo, .team-section {
+        width: 95%;
+    }
+    
+    .main {
+        font-size: 2rem;
+    }
+    
+    .team-member {
+        width: 100%;
+    }
+}
