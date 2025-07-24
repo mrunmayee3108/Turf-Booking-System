@@ -5,7 +5,7 @@ btn.onclick=(e)=>{
     if(form.checkValidity()){
         alert("Make Payment!!");
         setTimeout(() => {
-    window.location.href = "payment.html";
+            window.location.href = "payment.html";
         }, 2000);
         form.reset();
     }
