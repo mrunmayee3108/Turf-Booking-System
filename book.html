@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Booking form</title>
+    <link rel="stylesheet" href="book.css">
+</head>
+<body>
+    <img src="">
+    <div id="form">
+    <div id="title">
+        <h2>Book Your Slot</h2>
+    </div>
+    <div id="formContents">
+    <form id="myform" name="booking form">
+        <label>Full Name:</label>
+        <input type="text" class="input" placeholder="Enter Full Name" required>
+
+        <label >Mobile Number:</label>
+        <input type="tel" class="input" placeholder="10-digit number" required>
+
+        <label >Email ID:</label>
+        <input type="email" class="input" name="email" placeholder="Enter Valid Email Id" required>
+
+        <label >Booking Date:</label>
+        <input type="date" class="input" name="date" required>
+
+        <label >Time Slot:</label>
+        <select class="input" name="slot"  required>
+        <option value="">--Select Time Slot--</option>
+        <option>6:00 AM - 7:00 AM</option>
+        <option>7:00 AM - 8:00 AM</option>
+        <option>4:00 PM - 5:00 PM</option>
+        <option>5:00 PM - 6:00 PM</option>
+        <option>6:00 PM - 7:00 PM</option>
+        </select>
+
+        <label >Game Type:</label>
+        <select class="input" name="game" required>
+        <option value="">--Select Game--</option>
+        <option>Football</option>
+        <option>Cricket</option>
+        <option>Badminton</option>
+        <option>Other</option>
+        </select> 
+
+        <div class="button"><button type="submit">Book Now</button></div>
+    </form>
+    </div>
+    </div>
+    <script src="book.js"></script>
+</body>
+</html>
