@@ -12,9 +12,5 @@ btn.onclick=(e)=>{
     else form.reportValidity();
 
 }
-// event.preventDefault() prevents the form from submitting and refreshing the page.
 
-// form.checkValidity() checks if all required fields are filled correctly.
-
-// form.reportValidity() shows built-in browser validation messages for missing or invalid inputs.
 
