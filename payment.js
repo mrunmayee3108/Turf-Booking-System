@@ -6,7 +6,7 @@ btn.onclick=(e)=>{
         alert("Payment Successful!!");
         setTimeout(() => {
         window.location.href = "thankyou.html";
-        }, 3000);
+        }, 1000);
         form.reset();
     }
     else form.reportValidity();
