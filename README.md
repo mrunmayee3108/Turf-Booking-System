@@ -9,3 +9,4 @@ Created by Mrunmayee Potdar, Ekta Sawant, Mahi Pendkalkar and Siddhi Thakur.
 HTML5
 CSS3
 JavaScript
+MySQL
