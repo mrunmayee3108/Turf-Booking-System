@@ -1,0 +1,45 @@
+CREATE DATABASE TURF;
+USE TURF;
+
+CREATE TABLE TURFS(
+ID INT PRIMARY KEY,
+NAME VARCHAR(100) NOT NULL,
+LOCATION VARCHAR(200) NOT NULL,
+PRICE_PER_HR DECIMAL(5,2) NOT NULL
+);
+
+ALTER TABLE TURFS MODIFY COLUMN PRICE_PER_HR DECIMAL(10,2);
+
+INSERT INTO TURFS(ID, NAME, LOCATION, PRICE_PER_HR)
+VALUES
+(12, "Mumbai Cricket Club", "Santacruz", 7500.00),
+(11, "Gi Sports Turf Arena", "Dahisar", 5000.50),
+(34, "The Sportsfield", "Bandra", 7500.00),
+(22, "The Club 04", "Thane", 6000.50),
+(23, "Kandivali", 6000.50);
+
+INSERT INTO TURFS(ID, NAME, LOCATION, PRICE_PER_HR)
+VALUES
+(45, "Green Turf Grounds", "Andheri", 6800.00),
+(56, "Elite Play Arena", "Powai", 7200.75),
+(67, "Victory Sports Hub", "Goregaon", 5400.25),
+(78, "Legends Turf Park", "Chembur", 8100.00),
+(89, "Arena One Sports", "Malad", 6550.50),
+(91, "Prime Turf Zone", "Vile Parle", 7000.00),
+(92, "Champion Sports Arena", "Kurla", 5800.50);
+
+CREATE TABLE BOOKINGS(
+BOOKING_ID INT PRIMARY KEY,
+TURF_ID INT NOT NULL,
+USERNAME VARCHAR(50) NOT NULL,
+SELECTED_DATE DATE NOT NULL,
+TIME_SLOT VARCHAR(30) NOT NULL,
+STATUS VARCHAR(20) DEFAULT "BOOKED",
+FOREIGN KEY (TURF_ID) REFERENCES TURFS (ID)
+);
+USE TURF;
+
+
+
+
+
